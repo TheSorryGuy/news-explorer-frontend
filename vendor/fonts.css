@@ -5,10 +5,51 @@
   src: url("./fonts/Inter-Regular.woff2") format("woff2");
 }
 
-
 @font-face {
   font-family: 'Inter';
   font-style:  normal;
   font-weight: 900;
   src: url("./fonts/Inter-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style:  normal;
+  font-weight: 400;
+  src: url("./fonts/roboto-v20-cyrillic-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style:  normal;
+  font-weight: 500;
+  src: url("./fonts/roboto-v20-cyrillic-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style:  normal;
+  font-weight: 900;
+  src: url("./fonts/roboto-v20-cyrillic-900.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style:  normal;
+  font-weight: 400;
+  src: url("./fonts/roboto-slab-v11-cyrillic-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style:  normal;
+  font-weight: 500;
+  src: url("./fonts/roboto-slab-v11-cyrillic-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style:  normal;
+  font-weight: 900;
+  src: url("./fonts/roboto-slab-v11-cyrillic-900.woff2") format("woff2");
 }
