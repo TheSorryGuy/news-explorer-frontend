@@ -1,0 +1,14 @@
+@import url(./__main-page/header__main-page.css);
+@import url(./__menu/header__menu.css);
+@import url(./__saved-articles/header__saved-articles.css);
+@import url(./__title/header__title.css);
+@import url(./__botton/header__botton.css);
+
+.header {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  border-bottom: .5px solid rgba(255, 255, 255, 0.2);
+  justify-content: space-between;
+  align-items: center;
+}
