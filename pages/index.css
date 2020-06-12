@@ -1,7 +1,7 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
+@import url(../blocks/search/search.css);
 
-body {
-  background-color: #000;
-  font-family: Roboto;
+div, h1, h2, h3, p {
+  border: solid red 1px;
 }

@@ -1,0 +1,13 @@
+@import url("./__title/search__title.css");
+@import url("./__text/search__text.css");
+@import url("./__input/search__input.css");
+
+.search {
+  max-width: 100%;
+  height: 576px;
+  background: url("../../images/header-background.png");
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,10 @@
+@import url("./_field/search__input_field.css");
+@import url("./_button/search__input_button.css");
+
+.search__input {
+  font-family: Roboto;
+  margin: 64px 0px 0px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
