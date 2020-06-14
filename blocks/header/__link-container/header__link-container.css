@@ -1,12 +1,9 @@
-.header__main-page {
-  color: white;
+.header__link-container {
+  color: #B6BCBF;
   font-family: Roboto;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   margin: 0 32px 0 0;
-  border-bottom: 3px solid white;
-  height: 80px;
   display: flex;
-  align-items: center;
 }
