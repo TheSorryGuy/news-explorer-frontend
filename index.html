@@ -19,25 +19,73 @@
       <h1 class="header__title">NewsExplorer</h1>
       <div class="header__menu">
         <div class="header__link-container">
-          <botton class="header__link header__link_active">Главная</botton>
-          <botton class="header__link">Сохранённые статьи</botton>
+          <a href='index.html' class="header__link header__link_active">Главная</a>
+          <a href='saved.html' class="header__link">Сохранённые статьи</a>
         </div>
-        <botton class="header__botton">Грета
+        <button class="header__button">Грета
           <img class="header__icon" src="images/Union.png" alt="">
-        </botton>
+        </button>
       </div>
     </header>
 
-    <div class="search">
+    <section class="search">
       <h2 class="search__title">Что в мире творится?</h2>
       <p class="search__text">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
       <div class="search__input">
         <input type="text" name="search" class="search__input_field" placeholder="Введите тему новости">
-        <botton type class="search__input_button">Искать</botton>
+        <button class="search__input_button">Искать</button>
       </div>
-    </div>
+    </section>
 
-    <div class="about">
+    <section class="results">
+      <h2 class="results__title">Результаты поиска</h2>
+
+      <div class="results__container">
+
+        <div class="article">
+          <button class="article__button article__button_active"></button>
+          <img class="article__image" src="images/plants.png" alt="">
+          <div class="article__info">
+            <p class="article__date">2 августа, 2019</p>
+            <h2 class="article__title">Национальное достояние - парки</h2>
+            <p class="article__text">
+              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+            </p>
+            <p class="article__source">лента.ру</p>
+          </div>
+        </div>
+
+        <div class="article">
+          <button class="article__button"></button>
+          <img class="article__image" src="images/plants.png" alt="">
+          <div class="article__info">
+            <p class="article__date">2 августа, 2019</p>
+            <h2 class="article__title">Национальное достояние - парки</h2>
+            <p class="article__text">
+              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+            </p>
+            <p class="article__source">лента.ру</p>
+          </div>
+        </div>
+
+        <div class="article">
+          <button class="article__button"></button>
+          <img class="article__image" src="images/plants.png" alt="">
+          <div class="article__info">
+            <p class="article__date">2 августа, 2019</p>
+            <h2 class="article__title">Национальное достояние - парки</h2>
+            <p class="article__text">
+              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+            </p>
+            <p class="article__source">лента.ру</p>
+          </div>
+        </div>
+
+      </div>
+      <button class="results__button">Показать еще</button>
+    </section>
+
+    <section class="about">
         <div class="about__image"></div>
         <div class="about__text">
           <h2 class="about__title">Об авторе</h2>
@@ -46,7 +94,7 @@
             <br /><br />Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.
           </p>
         </div>
-    </div>
+    </section>
 
     <footer class="footer">
       <p class="footer__copywrite">&copy; Supersite, Powered by News API</p>

@@ -1,4 +1,6 @@
-.header__botton {
+@import url(./header__button_saved.css);
+
+.header__button {
   width: max-content;
   height: 48px;
   border: 1px solid #FFFFFF;
@@ -14,4 +16,6 @@
   line-height: 24px;
   margin: 0 104px 0 0;
   padding: 0 19px 0 19px;
+  background: none;
+  outline: none;
 }

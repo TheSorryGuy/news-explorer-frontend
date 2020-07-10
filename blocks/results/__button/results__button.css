@@ -1,0 +1,16 @@
+.results__button {
+  width: 288px;
+  height: 64px;
+  border-radius: 80px;
+  background-color: white;
+  display: block;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1A1B22;
+  margin: 64px auto 0;
+}
