@@ -1,15 +1,4 @@
-@import url(./header__link_active.css);
-@import url(./header__link_saved.css);
-
 .header__link {
-  height: 80px;
-  display: flex;
-  align-items: center;
-  margin-right: 34px;
-  background: none;
   border: none;
-}
-
-.header__link:last-of-type {
-  margin-right: 0;
+  text-decoration: none;
 }

@@ -1,1 +1,7 @@
 @import url(./header/header_saved.css);
+@import url(./info/info.css);
+@import url(./saved-articles/saved-articles.css);
+
+.root {
+  color: #1A1B22;
+}

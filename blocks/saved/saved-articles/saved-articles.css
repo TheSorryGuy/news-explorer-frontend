@@ -1,0 +1,7 @@
+.saved-articles {
+  margin: 118px 104px 62px 104px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 16px;
+}
