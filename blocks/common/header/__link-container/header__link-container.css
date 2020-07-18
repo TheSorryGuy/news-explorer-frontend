@@ -6,3 +6,10 @@
 .header__link-container:last-of-type {
   margin-right: 0;
 }
+
+@media screen and (max-width: 820px) {
+  .header__link-container {
+    margin-right: 16px;
+    padding: 22px 0 20px 0;
+  }
+}

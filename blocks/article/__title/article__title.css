@@ -2,6 +2,21 @@
   font-family: Roboto Slab;
   font-size: 26px;
   line-height: 30px;
+  font-weight: normal;
   color: #1A1B22;
   margin: 0 0 16px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .article__title {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .article__title {
+    line-height: 28px;
+  }
 }

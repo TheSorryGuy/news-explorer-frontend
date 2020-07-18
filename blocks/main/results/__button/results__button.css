@@ -13,4 +13,24 @@
   justify-content: center;
   color: #1A1B22;
   margin: 64px auto 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.results__button:hover {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 1024px) {
+  .results__button {
+    width: 240px;
+    height: 56px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .results__button {
+    width: 288px;
+  }
 }

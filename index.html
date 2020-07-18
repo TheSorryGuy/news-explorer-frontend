@@ -9,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>News Explorer</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
-  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="<%=require('./images/favicon.png').default%>" type="image/x-icon">
 </head>
 
 <body>
@@ -17,6 +17,7 @@
 
     <header class="header header_main">
       <h1 class="header__title header__title_main">NewsExplorer</h1>
+      <button class="header__menu-button"></button>
       <div class="header__menu">
         <div class="header__container">
           <div class="header__link-container header__link-container_main_active">
@@ -45,9 +46,21 @@
       <h2 class="results__title">Результаты поиска</h2>
 
       <div class="results__container">
-
         <div class="article">
           <button class="article__button article__button_active"></button>
+          <img class="article__image" src="<%=require('./images/plants.png').default%>" alt="">
+          <div class="article__info">
+            <p class="article__date">2 августа, 2019</p>
+            <h2 class="article__title">Национальное достояние - парки</h2>
+            <p class="article__text">
+              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+            </p>
+            <p class="article__source">лента.ру</p>
+          </div>
+        </div>
+
+        <div class="article">
+          <button class="article__button"></button>
           <img class="article__image" src="<%=require('./images/plants.png').default%>" alt="">
           <div class="article__info">
             <p class="article__date">2 августа, 2019</p>
@@ -103,10 +116,14 @@
     <footer class="footer">
       <p class="footer__copywrite">&copy; Supersite, Powered by News API</p>
       <div class="footer__links-container">
-        <p class="footer__link">Главная</p>
-        <p class="footer__link">Яндекс.Практикум</p>
-        <a class="footer__icon footer__icon_github" href="https://github.com/TheSorryGuy"></a>
-        <a class="footer__icon footer__icon_facebook" href="https://facebook.com"></a>
+        <div class="footer__text-links">
+          <a href="./index.html" class="footer__link">Главная</a>
+          <a href="https://praktikum.yandex.ru" class="footer__link">Яндекс.Практикум</a>
+        </div>
+        <div class="footer__social">
+          <a class="footer__icon footer__icon_github" href="https://github.com/TheSorryGuy"></a>
+          <a class="footer__icon footer__icon_facebook" href="https://facebook.com"></a>
+        </div>
       </div>
     </footer>
 

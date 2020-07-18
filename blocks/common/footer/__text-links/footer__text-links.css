@@ -1,0 +1,8 @@
+@media screen and (max-width: 670px) {
+  .footer__text-links {
+    display: flex;
+    flex-direction: column;
+    height: 74px;
+    justify-content: space-between;
+  }
+}

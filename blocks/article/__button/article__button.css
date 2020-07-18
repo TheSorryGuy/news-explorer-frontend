@@ -19,3 +19,10 @@
 .article__button:hover {
   background-image: url(../../../images/flag-active.png);
 }
+
+@media screen and (max-width: 768px) {
+  .article__button {
+    top: 8px;
+    right: 8px;
+  }
+}

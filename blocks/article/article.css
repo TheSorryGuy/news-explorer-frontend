@@ -7,10 +7,21 @@
 @import url(./__info/article__info.css);
 
 .article {
-  width: 400px;
-  height: 576px;
+  max-width: 400px;
   background-color: white;
   border-radius: 16px;
   overflow: hidden;
   position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .article {
+    max-width: 224px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .article {
+    max-width: 288px;
+  }
 }

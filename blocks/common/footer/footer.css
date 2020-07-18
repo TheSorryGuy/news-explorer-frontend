@@ -2,9 +2,24 @@
 @import url(./__icon/footer__icon.css);
 @import url(./__link/footer__link.css);
 @import url(./__links-container/footer__links-container.css);
+@import url(./__text-links/footer__text-links.css);
+@import url(./__social/footer__social.css);
 
 .footer {
   display: flex;
-  margin: 0 104px 0 104px;
+  padding: 32px 7vw 26px 7vw;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 24px 40px 18px 40px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .footer {
+    flex-wrap: wrap;
+    padding: 20px 16px 20px 16px;
+  }
 }

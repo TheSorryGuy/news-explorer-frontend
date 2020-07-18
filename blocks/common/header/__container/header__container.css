@@ -6,3 +6,10 @@
   margin: 0 32px 0 0;
   display: flex;
 }
+
+@media screen and (max-width: 768px) {
+  .header__container {
+    font-size: 16px;
+    margin-right: 16px;
+  }
+}

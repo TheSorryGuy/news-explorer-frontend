@@ -3,4 +3,12 @@
   font-size: 16px;
   line-height: 22px;
   color: #B6BCBF;
+  margin: 0;
+}
+
+@media screen and (max-width: 670px) {
+  .footer__copywrite {
+    order: 1;
+    margin-top: 38px;
+  }
 }

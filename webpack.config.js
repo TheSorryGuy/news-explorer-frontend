@@ -62,6 +62,10 @@ module.exports = {
           template: './index.html',
           filename: 'index.html'
       }),
+      new HtmlWebpackPlugin({
+          template: './saved.html',
+          filename: 'saved.html'
+    }),
       new WebpackMd5Hash(),
   ]
 };
