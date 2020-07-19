@@ -4,7 +4,6 @@
 
 @media screen and (max-width: 620px) {
   .header__menu-button {
-    background: url(../../../../images/menu.png);
     display: block;
     width: 24px;
     height: 24px;

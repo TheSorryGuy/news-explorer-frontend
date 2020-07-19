@@ -11,18 +11,20 @@
   justify-content: center;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../../../images/flag.png);
   border: none;
   outline: none;
-}
-
-.article__button:hover {
-  background-image: url(../../../images/flag-active.png);
 }
 
 @media screen and (max-width: 768px) {
   .article__button {
     top: 8px;
     right: 8px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .article__button {
+    top: 16px;
+    right: 16px;
   }
 }

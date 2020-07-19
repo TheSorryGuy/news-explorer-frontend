@@ -16,6 +16,7 @@
     <div class="root">
       <header class="header header_saved">
       <h1 class="header__title header__title_saved">NewsExplorer</h1>
+      <button class="header__menu-button header__menu-button_saved"></button>
       <div class="header__menu">
         <div class="header__container">
           <div class="header__link-container">
@@ -37,14 +38,15 @@
           <span class="info__username">Грета</span>, у вас <span class="info__articles-number">5</span> сохранённых статей
         </p>
         <p class="info__keywords">
-          По ключевым словам: <span class='info__keyword'>Природа</span> <span class='info__keyword'>Природа</span> и <span class='info__keyword info__keyword_number'>0 другим</span>
+          По ключевым словам: <span class='info__keyword'>Природа,</span> <span class='info__keyword'>Природа,</span> и <span class='info__keyword info__keyword_number'>0 другим</span>
         </p>
       </div>
 
       <div class="saved-articles">
 
         <div class="article">
-          <button class="article__button article__button_active"></button>
+          <div class="article__keyword">Природа</div>
+          <button class="article__button article__button_saved"></button>
           <img class="article__image" src="images/plants.png" alt="">
           <div class="article__info">
             <p class="article__date">2 августа, 2019</p>
@@ -57,7 +59,8 @@
         </div>
 
         <div class="article">
-          <button class="article__button article__button_active"></button>
+          <div class="article__keyword">Природа</div>
+          <button class="article__button article__button_saved"></button>
           <img class="article__image" src="images/plants.png" alt="">
           <div class="article__info">
             <p class="article__date">2 августа, 2019</p>
@@ -70,7 +73,8 @@
         </div>
 
         <div class="article">
-          <button class="article__button article__button_active"></button>
+          <div class="article__keyword">Природа</div>
+          <button class="article__button article__button_saved"></button>
           <img class="article__image" src="images/plants.png" alt="">
           <div class="article__info">
             <p class="article__date">2 августа, 2019</p>
@@ -83,7 +87,8 @@
         </div>
 
         <div class="article">
-          <button class="article__button article__button_active"></button>
+          <div class="article__keyword">Природа</div>
+          <button class="article__button article__button_saved"></button>
           <img class="article__image" src="images/plants.png" alt="">
           <div class="article__info">
             <p class="article__date">2 августа, 2019</p>
@@ -96,7 +101,8 @@
         </div>
 
         <div class="article">
-          <button class="article__button article__button_active"></button>
+          <div class="article__keyword">Природа</div>
+          <button class="article__button article__button_saved"></button>
           <img class="article__image" src="images/plants.png" alt="">
           <div class="article__info">
             <p class="article__date">2 августа, 2019</p>
@@ -113,10 +119,14 @@
       <footer class="footer">
         <p class="footer__copywrite">&copy; Supersite, Powered by News API</p>
         <div class="footer__links-container">
-          <p class="footer__link">Главная</p>
-          <p class="footer__link">Яндекс.Практикум</p>
-          <a class="footer__icon footer__icon_github" href="https://github.com/TheSorryGuy"></a>
-          <a class="footer__icon footer__icon_facebook" href="https://facebook.com"></a>
+          <div class="footer__text-links">
+            <a href="./index.html" class="footer__link">Главная</a>
+            <a href="https://praktikum.yandex.ru" class="footer__link">Яндекс.Практикум</a>
+          </div>
+          <div class="footer__social">
+            <a class="footer__icon footer__icon_github" href="https://github.com/TheSorryGuy"></a>
+            <a class="footer__icon footer__icon_facebook" href="https://facebook.com"></a>
+          </div>
         </div>
       </footer>
     </div>

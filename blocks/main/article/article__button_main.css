@@ -1,0 +1,7 @@
+.article__button_main {
+  background-image: url(../../../images/flag.png);
+}
+
+.article__button_main:hover {
+  background-image: url(../../../images/flag-active.png);
+}
