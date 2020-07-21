@@ -1,0 +1,7 @@
+.popup-entry__additional-field {
+  display: none;
+}
+
+.popup-entry__additional-field.popup-entry__additional-field_opened {
+  display: flex;
+}

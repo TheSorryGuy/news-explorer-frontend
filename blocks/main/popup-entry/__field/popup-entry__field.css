@@ -1,0 +1,11 @@
+.popup-entry__field {
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.popup-entry__field:last-of-type {
+  margin-bottom: 17px;
+}

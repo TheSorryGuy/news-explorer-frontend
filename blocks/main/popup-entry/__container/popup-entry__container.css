@@ -1,0 +1,12 @@
+.popup-entry__container {
+  background: white;
+  border-radius: 16px;
+  padding: 34px 35px 28px 35px;
+  position: relative;
+  height: 321px;
+  transition: height .2s ease-out;
+}
+
+.popup-entry__container.popup-entry__container_long {
+  height: 396px;
+}

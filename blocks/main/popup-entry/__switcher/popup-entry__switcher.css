@@ -1,0 +1,9 @@
+.popup-entry__switcher {
+  color: #2F71E5;
+  cursor: pointer;
+  transition: color .2s ease-out;
+}
+
+.popup-entry__switcher:hover {
+  color: #347EFF
+}

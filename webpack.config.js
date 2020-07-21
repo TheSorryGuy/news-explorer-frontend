@@ -7,7 +7,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
-  entry: { main: './src/index.js' },
+  entry: { main: './src/index.js', saved: './src/saved.js' },
   output: {
       path: path.resolve(__dirname, 'dist'),
       filename: '[name].[chunkhash].js'
@@ -38,7 +38,12 @@ module.exports = {
       {
           test: /\.css$/i,
           use: [
-              (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
+              isDev ? 'style-loader' : {
+                loader: MiniCssExtractPlugin.loader,
+                options: {
+                  publicPath: '../',
+                },
+              },
               'css-loader',
               'postcss-loader'
               ]
@@ -47,7 +52,7 @@ module.exports = {
   },
   plugins: [
       new webpack.DefinePlugin({'NODE_ENV': JSON.stringify(process.env.NODE_ENV)}),
-      new MiniCssExtractPlugin({filename: 'style.[contenthash].css'}),
+      new MiniCssExtractPlugin({filename: 'style/style.[name].[contenthash].css'}),
       new OptimizeCssAssetsPlugin({
           assetNameRegExp: /\.css$/g,
           cssProcessor: require('cssnano'),
@@ -60,11 +65,13 @@ module.exports = {
       new HtmlWebpackPlugin({
           inject: false,
           template: './index.html',
-          filename: 'index.html'
+          filename: 'index.html',
+          chunks: ['main', 'images']
       }),
       new HtmlWebpackPlugin({
           template: './saved.html',
-          filename: 'saved.html'
+          filename: 'saved.html',
+          chunks: ['saved']
     }),
       new WebpackMd5Hash(),
   ]
