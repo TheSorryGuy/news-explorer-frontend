@@ -1,0 +1,17 @@
+.header_dark {
+  background: #1A1B22;
+  border-bottom-width: 100vh;
+  top: 0;
+}
+
+.header_dark::after {
+  background: #000000;
+  opacity: 0.5;
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  top: 57px;
+  z-index: -2;
+}

@@ -1,12 +1,14 @@
+@import url('./_active/popup-entry__submit_active.css');
+
 .popup-entry__submit {
   font-family: Roboto;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  color: white;
+  color: #B6BCBF;
   border: none;
   outline: none;
-  background: #2F71E5;
+  background: #E6E8EB;
   border-radius: 100px;
   height: 64px;
   width: 360px;

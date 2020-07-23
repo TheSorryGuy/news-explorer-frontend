@@ -8,3 +8,8 @@
   line-height: 17px;
   padding: 9px 0 9px 0;
 }
+
+.popup-entry__input::placeholder {
+  opacity: 0.2;
+  color: black;
+}

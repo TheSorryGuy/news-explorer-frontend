@@ -13,3 +13,13 @@
     margin-right: 16px;
   }
 }
+
+@media screen and (max-width: 620px) {
+  .header__container {
+    flex-direction: column;
+    line-height: 56px;
+    margin: 0;
+    padding: 0 16px 0 16px;
+    width: 288px;
+  }
+}
