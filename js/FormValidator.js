@@ -1,21 +1,3 @@
-// export default class FormValidator {
-//   constructor(container) {
-//       this.container = container;
-//   }
-//   checkValidity() {
-//     const field = this.container.querySelector('.popup-entry__input');
-//     const button = this.container.querySelector('.popup-entry__submit');
-//     console.log(this.container);
-//     if (field.validity.valid) {
-//       button.textContent = "fafasfseff";
-//     }
-//   }
-//   listen() {
-//     console.log(this.container);
-//     this.container.querySelector('.popup-entry__input').addEventListener('input', this.checkValidity)
-//   }
-// }
-
 export default class FormValidator {
   constructor(container) {
     this.container = container;

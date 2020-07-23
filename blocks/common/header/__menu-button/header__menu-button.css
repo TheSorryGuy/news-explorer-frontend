@@ -1,3 +1,5 @@
+@import url(./_close/header__menu-button_close.css);
+
 .header__menu-button {
   display: none;
 }

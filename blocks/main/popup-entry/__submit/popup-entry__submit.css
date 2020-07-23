@@ -12,4 +12,12 @@
   border-radius: 100px;
   height: 64px;
   width: 360px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 620px) {
+  .popup-entry__submit {
+    width: 288px;
+  }
 }

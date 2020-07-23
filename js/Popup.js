@@ -1,13 +1,15 @@
 export default class Popup {
-  constructor(popup, validator) {
+  constructor(popup, validator, menu) {
     this.popup = popup;
     this.validator = validator;
+    this.menu = menu;
   }
   popupEventListeners() {
     this.popup.querySelector('.popup-entry__close').addEventListener('click', this.close.bind(this));
     this.popup.querySelector('.popup-entry__switcher').addEventListener('click', this.switch.bind(this));
   }
   open() {
+    this.menu.switch();
     this.popup.classList.add('popup_is-opened');
     this.validator.setSubmitState();
   }
@@ -32,6 +34,6 @@ export default class Popup {
     }
   }
   close() {
-    this.popup.classList.remove('popup_is-opened')
+    this.popup.classList.remove('popup_is-opened');
   }
 }

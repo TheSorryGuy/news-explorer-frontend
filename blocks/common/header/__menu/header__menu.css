@@ -13,9 +13,10 @@
     border-bottom-right-radius: 16px;
     width: 100%;
     position: absolute;
-    top: -200px;
+    top: -300px;
     z-index: -1;
     padding-bottom: 24px;
     padding-top: 16px;
+    transition: top .2s;
   }
 }

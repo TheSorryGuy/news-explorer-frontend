@@ -14,3 +14,21 @@
 .popup-entry__close:hover {
   opacity: .8;
 }
+
+@media screen and (max-width: 768px) {
+  .popup-entry__close {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background: none;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .popup-entry__close {
+    display: none;
+  }
+}

@@ -1,12 +1,17 @@
 import "../pages/index.css";
 import Popup from '../js/Popup';
 import FormValidator from '../js/FormValidator';
+import Menu from '../js/Menu';
 
 const popupForm = document.querySelector('.popup');
 const entryButton = document.querySelector('.header__button');
+const header = document.querySelector('.header');
+const menuButton = document.querySelector('.header__menu-button')
 
 const validator = new FormValidator(popupForm)
-const popup = new Popup(popupForm, validator);
+const menu = new Menu(header, popupForm, menuButton);
+const popup = new Popup(popupForm, validator, menu);
+
 
 function openPopup() {
   popup.open();
@@ -15,6 +20,7 @@ function openPopup() {
 validator.setEventListeners();
 popup.popupEventListeners();
 
+menu.setListeners();
 entryButton.addEventListener('click', openPopup);
 
 
