@@ -1,0 +1,44 @@
+.header__button {
+  width: max-content;
+  height: 48px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 7vw 0 0;
+  padding: 0 19px 0 19px;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  transition: opacity .2s ease-out;
+}
+
+.header__button:hover {
+  opacity: .8;
+}
+
+@media screen and (max-width: 768px) {
+  .header__button {
+    font-size: 16px;
+    height: 40px;
+    padding: 0 15px 0 15px;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .header__button {
+    font-size: 16px;
+    height: 40px;
+    padding: 0 15px 0 15px;
+    margin: 22px 0 0 0;
+    width: 288px;
+    height: 56px;
+  }
+}
+

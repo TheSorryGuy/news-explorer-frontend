@@ -1,0 +1,20 @@
+@import url(./info__keyword.css);
+@import url(./info__keywords.css);
+@import url(./info__text.css);
+@import url(./info__title.css);
+
+.info {
+  margin: 40px 104px 56px 104px;
+}
+
+@media screen and (max-width: 1024px) {
+  .info {
+    margin: 24px 40px 32px 40px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .info {
+    margin: 8px 16px 32px 16px;
+  }
+}

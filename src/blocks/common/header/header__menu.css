@@ -1,0 +1,22 @@
+
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 620px) {
+  .header__menu {
+    flex-direction: column;
+    background: #1A1B22;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    width: 100%;
+    position: absolute;
+    top: -300px;
+    z-index: -1;
+    padding-bottom: 24px;
+    padding-top: 16px;
+    transition: top .2s;
+  }
+}

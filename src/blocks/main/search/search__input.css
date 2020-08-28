@@ -1,0 +1,15 @@
+
+.search__input {
+  font-family: Roboto;
+  margin: 64px 0px 0px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+@media screen and (max-width: 620px) {
+  .search__input {
+    flex-direction: column;
+  }
+}

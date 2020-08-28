@@ -1,0 +1,11 @@
+.header__button_saved {
+  outline: none;
+  border: 1px solid #1A1B22;
+}
+
+@media screen and (max-width: 620px) {
+  .header__button_saved {
+    color: white;
+    border-color: white;
+  }
+}

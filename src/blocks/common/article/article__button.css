@@ -1,0 +1,44 @@
+.article__button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  outline: none;
+}
+
+.article__button:hover::after {
+  display: flex;
+  height: 40px;
+  background-color: white;
+  position: absolute;
+  right: 45px;
+  border-radius: 8px;
+  font-family: Roboto;
+  font-weight: 500;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .article__button {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .article__button {
+    top: 16px;
+    right: 16px;
+  }
+}
