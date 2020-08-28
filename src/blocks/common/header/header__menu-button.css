@@ -1,0 +1,15 @@
+
+.header__menu-button {
+  display: none;
+}
+
+@media screen and (max-width: 620px) {
+  .header__menu-button {
+    display: block;
+    width: 24px;
+    height: 24px;
+    outline: none;
+    border: none;
+    margin-right: 16px;
+  }
+}

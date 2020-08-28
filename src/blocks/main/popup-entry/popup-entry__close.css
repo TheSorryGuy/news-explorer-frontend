@@ -1,0 +1,34 @@
+.popup-entry__close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -46px;
+  right: -46px;
+  background: url(../../../images/back.png);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: opacity .15s ease-out;
+}
+
+.popup-entry__close:hover {
+  opacity: .8;
+}
+
+@media screen and (max-width: 768px) {
+  .popup-entry__close {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background: none;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .popup-entry__close {
+    display: none;
+  }
+}

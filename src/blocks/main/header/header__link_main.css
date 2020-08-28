@@ -1,0 +1,10 @@
+
+.header__link_main {
+  color: #B6BCBF;
+}
+
+@media screen and (max-width: 620px) {
+  .header__link_main {
+    color: white;
+  }
+}

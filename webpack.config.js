@@ -64,12 +64,12 @@ module.exports = {
       }),
       new HtmlWebpackPlugin({
           inject: false,
-          template: './index.html',
+          template: './src/index.html',
           filename: 'index.html',
           chunks: ['main', 'images']
       }),
       new HtmlWebpackPlugin({
-          template: './saved.html',
+          template: './src/saved.html',
           filename: 'saved.html',
           chunks: ['saved']
     }),

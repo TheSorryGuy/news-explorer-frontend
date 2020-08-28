@@ -1,0 +1,27 @@
+@import url(./article__button.css);
+@import url(./article__date.css);
+@import url(./article__image.css);
+@import url(./article__source.css);
+@import url(./article__text.css);
+@import url(./article__title.css);
+@import url(./article__info.css);
+
+.article {
+  max-width: 400px;
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .article {
+    max-width: 224px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .article {
+    max-width: 288px;
+  }
+}

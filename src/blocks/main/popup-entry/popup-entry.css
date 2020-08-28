@@ -1,0 +1,31 @@
+@import url(./popup-entry__alt.css);
+@import url(./popup-entry__close.css);
+@import url(./popup-entry__error.css);
+@import url(./popup-entry__input.css);
+@import url(./popup-entry__subtitle.css);
+@import url(./popup-entry__switcher.css);
+@import url(./popup-entry__title.css);
+@import url(./popup-entry__container.css);
+@import url(./popup-entry__submit.css);
+@import url(./popup-entry__field.css);
+@import url(./popup_is-opened.css);
+@import url(./popup-entry__additional-field.css);
+@import url(./popup-entry__submit_active.css);
+
+.popup-entry {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+@media screen and (max-width: 620px) {
+  .popup-entry {
+    top: 57px
+  }
+}

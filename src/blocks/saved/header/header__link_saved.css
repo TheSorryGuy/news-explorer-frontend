@@ -1,0 +1,9 @@
+.header__link_saved {
+  color: inherit;
+}
+
+@media screen and (max-width: 620px) {
+  .header__link_saved {
+    color: white;
+  }
+}

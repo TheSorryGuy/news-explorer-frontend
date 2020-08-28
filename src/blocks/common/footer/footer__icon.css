@@ -1,0 +1,11 @@
+
+.footer__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 28px;
+}
+
+.footer__icon:last-of-type {
+  margin-right: 0;
+}
