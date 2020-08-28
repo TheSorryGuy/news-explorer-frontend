@@ -4,9 +4,10 @@ export default class Search {
     this.container = container;
     this.creator = creator;
   }
+
   getArticles(initialList) {
     initialList.forEach(article => {
-      this.creator.create(article)
+      this.creator.create(article);
     });
   }
 }

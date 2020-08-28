@@ -1,12 +1,10 @@
 export default class FormValidator {
   constructor(container, errors) {
     this.container = container;
-    this.errors = errors
+    this.errors = errors;
   }
 
-
   setSubmitState() {
-
     const button = this.container.querySelector('.popup-entry__submit');
     const check = this.inputsValid.bind(this);
 
@@ -24,16 +22,16 @@ export default class FormValidator {
 
   inputsValid() {
     const inputsList = this.container.querySelectorAll('.popup-entry__input')
-    var check = true;
+    let check = true;
     inputsList.forEach((input) => {
       if (
-        input.parentElement.classList.contains('popup-entry__additional-field_opened') ||
-        !input.parentElement.classList.contains('popup-entry__additional-field')
-        ) {
-          if (!input.validity.valid) {
-            check = false;
-          }
+        input.parentElement.classList.contains('popup-entry__additional-field_opened')
+        || !input.parentElement.classList.contains('popup-entry__additional-field')
+      ) {
+        if (!input.validity.valid) {
+          check = false;
         }
+      }
     });
     return check;
   }
@@ -43,7 +41,7 @@ export default class FormValidator {
     inputsList.forEach((input) => {
       const error = input.nextElementSibling;
       this.checker.call(this, input, error);
-    })
+    });
   }
 
   checker(input, error) {
@@ -60,12 +58,10 @@ export default class FormValidator {
       return;
     }
     if (input.validity.valid) {
-      error.textContent = ''
-      return;
+      error.textContent = '';
     }
     else {
       error.textContent = this.errors.nameLength;
-      return;
     }
   }
 }

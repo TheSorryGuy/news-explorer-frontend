@@ -1,14 +1,16 @@
 export default class Menu {
-  constructor(container, button, popup = false ) {
-      this.container = container;
-      this.popup = popup;
-      this.button = button;
+  constructor(container, button, popup = false) {
+    this.container = container;
+    this.popup = popup;
+    this.button = button;
   }
-  setListeners(){
+
+  setListeners() {
     this.container.querySelector('.header__menu-button').addEventListener('click', this.switch.bind(this));
   }
+
   switch() {
-    console.log(this.button)
+    console.log(this.button);
     if (window.getComputedStyle(this.button).display !== 'none') {
       if (this.popup) {
         if (this.popup.classList.contains('popup_is-opened')) {
